@@ -1,6 +1,6 @@
 
 import type { LucideIcon } from 'lucide-react';
-import { Briefcase, GraduationCap, Code2, Database, Cloud, Users, MessageCircle, Lightbulb, BarChart, GitFork, Linkedin, Github, Mail, Phone, Globe, Award } from 'lucide-react';
+import { Briefcase, GraduationCap, Code2, Database, Cloud, Users, MessageCircle, Lightbulb, BarChart, GitFork, Linkedin, Github, Mail, Phone, Globe, Award, Building } from 'lucide-react';
 
 export interface ContactInfo {
   email: string;
@@ -34,9 +34,8 @@ export interface CertificateEntry {
   issueDate: string; // e.g., "Issued Jun 2023"
   credentialId?: string;
   credentialUrl?: string;
-  icon?: LucideIcon;
-  // Optional: Add a field for the organization's logo if desired
-  // orgLogoUrl?: string; // e.g., "/images/logos/certifying-org-logo.png"
+  icon?: LucideIcon; // Icon for the certificate itself
+  orgLogoUrl?: string; // e.g., "/images/logos/certifying-org-logo.png" - place logo in `public/images/logos/`
 }
 
 export interface Skill {
@@ -76,7 +75,7 @@ export const resumeData: ResumeData = {
   name: "Ranvirsinh Gohil",
   title: "Full Stack Developer & AI Enthusiast",
   summary: "Innovative Full Stack Developer with 7+ years of experience in building scalable web applications and exploring AI-driven solutions. Passionate about creating user-centric products and leveraging technology to solve real-world problems. Proven ability to quickly learn new technologies and collaborate effectively in agile environments.",
-  profileImageUrl: "./images/profile/ranvirsinh-gohil.jpeg", // Replace with your photo path, e.g., "/images/profile/ranvirsinh-gohil.jpg"
+  profileImageUrl: "/images/profile/ranvirsinh-gohil.jpeg", // Updated path
   contact: {
     email: "ranveergohil@gmail.com",
     phone: "+91-8758384099",
@@ -93,7 +92,7 @@ export const resumeData: ResumeData = {
       responsibilities: [
         "I lead a talented team of developers in building and delivering a scalable, modular fintech application deployed across multiple countries. Our architecture leverages Module Federation for developing android (Huawei as well) and IOS apps to enable seamless collaboration and deployment of independent features across distributed teams. The backend involves integration with third party systems of various banks and institutions to enable user to pay all types of utilities and transfers in a single app . I’m responsible for aligning technical strategy with business goals, ensuring efficient development workflows, and driving the successful rollout of localised features in a high-compliance, fast-paced industry."
       ],
-      logoUrl: "./images/logos/comviva.jpeg", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
+      logoUrl: "/images/logos/comviva.jpeg", // Updated path
       icon: Briefcase,
     },
     {
@@ -106,7 +105,7 @@ export const resumeData: ResumeData = {
         "Designed and implemented a module that pushed out the web browser notifications based on interactions with marketing emails, social posts, or customer websites along with reports",
         "Handled integration with the Ticket Master platform to enable customers to target users based on their sports interests and history"
       ],
-      logoUrl: "./images/logos/comviva.jpeg", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
+      logoUrl: "/images/logos/comviva.jpeg", // Updated path
       icon: Briefcase,
     },
     {
@@ -123,7 +122,7 @@ export const resumeData: ResumeData = {
         "Contributed to the migration of legacy systems to modern microservices architecture.",
         "Wrote unit and integration tests to ensure code quality."
       ],
-      logoUrl: "./images/logos/comviva.jpeg", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
+      logoUrl: "/images/logos/comviva.jpeg", // Updated path
       icon: Briefcase,
     },
     {
@@ -139,7 +138,7 @@ export const resumeData: ResumeData = {
         "Participated in the full software development lifecycle, from design to deployment.",
         "Contributed to improving application performance and scalability.",
       ],
-      logoUrl: "./images/logos/servify.jpeg", // Replace with company logo path, e.g., "/images/logos/innovatech.png"
+      logoUrl: "/images/logos/servify.jpeg", // Updated path
       icon: Briefcase,
     },
     {
@@ -156,7 +155,7 @@ export const resumeData: ResumeData = {
         "Implemented the Event payment gateway with extra features",
         "Created Advertisement module and injected it in 3 different modules of the existing project"
       ],
-      logoUrl: "./images/logos/plexusmd.jpeg", // Replace with company logo path, e.g., "/images/logos/innovatech.png"
+      logoUrl: "/images/logos/plexusmd.jpeg", // Updated path
       icon: Briefcase,
     }
   ],
@@ -176,16 +175,16 @@ export const resumeData: ResumeData = {
       issueDate: "Issued Feb 2022",
       credentialId: "f8cfc19573",
       credentialUrl: "https://certificate.algoexpert.io/AlgoExpert%20Certificate%20AE-f8cfc19573",
-      icon: Award,
-      orgLogoUrl: "./images/logos/algoexpert.jpeg" // Example for cert org logo
+      icon: Award, // Icon for the certificate item itself
+      orgLogoUrl: "/images/logos/algoexpert.jpeg" // Path relative to public folder
     },
     {
       name: "AWS Certified Solutions Architect - Associate",
       issuingOrganization: "Amazon Web Services (AWS)",
       issueDate: "Issued Mar 2021 - Expires Mar 2024",
-      credentialUrl: "https://www.youracclaim.com/badges/some-badge-id",
+      credentialUrl: "https://www.youracclaim.com/badges/some-badge-id", // Replace with actual link
       icon: Award,
-      // orgLogoUrl: "https://placehold.co/80x80.png" // Example for cert org logo
+      orgLogoUrl: "/images/logos/aws.png" // Example: ensure you have `public/images/logos/aws.png`
     },
     {
       name: "Certified Kubernetes Administrator (CKA)",
@@ -193,7 +192,7 @@ export const resumeData: ResumeData = {
       issueDate: "Issued Jul 2020",
       credentialId: "LF-CKA-67890",
       icon: Award,
-      // orgLogoUrl: "https://placehold.co/80x80.png" // Example for cert org logo
+      orgLogoUrl: "/images/logos/linux-foundation.png" // Example: ensure you have `public/images/logos/linux-foundation.png`
     }
   ],
   skills: [
@@ -238,23 +237,23 @@ export const resumeData: ResumeData = {
       name: "AI Powered Recipe Generator",
       description: "A web application that suggests recipes based on available ingredients using a custom-trained NLP model.",
       technologies: ["Next.js", "Python", "Flask", "TensorFlow", "MongoDB"],
-      link: "https://github.com/alexjohnsondev/ai-recipe-app",
-      imageUrl: "https://placehold.co/600x400.png", // Replace with project image path, e.g., "/images/projects/ai-recipe.png"
+      link: "https://github.com/alexjohnsondev/ai-recipe-app", // Replace with your repo
+      imageUrl: "/images/projects/ai-recipe.png", // Ensure this image exists in public/images/projects
       icon: Lightbulb,
     },
     {
       name: "Real-time Collaborative Editor",
       description: "A platform for multiple users to edit documents simultaneously, built with WebSockets and CRDTs.",
       technologies: ["React", "Node.js", "Socket.IO", "Redis"],
-      link: "https://github.com/alexjohnsondev/collab-editor",
-      imageUrl: "https://placehold.co/600x400.png", // Replace with project image path, e.g., "/images/projects/collab-editor.png"
+      link: "https://github.com/alexjohnsondev/collab-editor", // Replace with your repo
+      imageUrl: "/images/projects/collab-editor.png", // Ensure this image exists in public/images/projects
       icon: Code2,
     },
     {
       name: "Portfolio Website V1",
       description: "My first personal portfolio website built to showcase early projects and skills.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      imageUrl: "https://placehold.co/600x400.png", // Replace with project image path, e.g., "/images/projects/portfolio-v1.png"
+      imageUrl: "/images/projects/portfolio-v1.png", // Ensure this image exists in public/images/projects
       icon: Globe,
     }
   ],
@@ -270,4 +269,6 @@ export const socialIcons = {
 
 export const sectionIcons = {
   certificates: Award,
+  // You can add more specific icons for other sections here if needed
+  // e.g., experience: Briefcase, education: GraduationCap, etc.
 };

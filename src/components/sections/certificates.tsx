@@ -4,7 +4,7 @@ import { Container } from '@/components/container';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Award } from 'lucide-react'; // Added Award as a fallback icon
 import Image from 'next/image';
 
 
@@ -17,9 +17,8 @@ const CertificateItem = ({ item }: { item: CertificateEntry }) => (
     <CardHeader className="pb-4">
       <div className="flex items-start space-x-4">
         <div className="flex-shrink-0 w-12 h-12 relative rounded-md overflow-hidden border border-border bg-muted flex items-center justify-center">
-            {/* Placeholder for potential issuing organization logo - or use a generic icon */}
             <Image
-              src={`https://placehold.co/80x80.png`}
+              src={item.orgLogoUrl || `https://placehold.co/80x80.png`}
               alt={`${item.issuingOrganization} logo`}
               width={48}
               height={48}
