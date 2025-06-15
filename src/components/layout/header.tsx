@@ -2,7 +2,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Menu, X, Briefcase, Award } from 'lucide-react'; // Added Award
+import { Menu, X } from 'lucide-react'; 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resume-data';
@@ -14,11 +14,41 @@ const navItems = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
   { href: '#education', label: 'Education' },
-  { href: '#certificates', label: 'Certificates' }, // Added Certificates
+  { href: '#certificates', label: 'Certificates' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ];
+
+const RgLogo = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 50 50"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <text
+      x="2"
+      y="38"
+      fontFamily="system-ui, Inter, sans-serif"
+      fontSize="32"
+      fontWeight="bold"
+      textAnchor="start"
+    >
+      R
+    </text>
+    <text
+      x="26"
+      y="38"
+      fontFamily="system-ui, Inter, sans-serif"
+      fontSize="32"
+      fontWeight="bold"
+      textAnchor="start"
+    >
+      G
+    </text>
+  </svg>
+);
 
 export function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -36,7 +66,7 @@ export function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-card shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <Link href="#home" className="flex items-center gap-2 text-xl font-bold text-primary hover:text-accent transition-colors">
-          <Briefcase className="h-6 w-6" />
+          <RgLogo className="h-6 w-6" />
           <span className="font-headline">{resumeData.name}</span>
         </Link>
 
@@ -65,7 +95,7 @@ export function Header() {
               <div className="flex flex-col space-y-4">
                 <div className="flex justify-between items-center mb-4">
                     <Link href="#home" className="flex items-center gap-2 text-lg font-bold text-primary" onClick={() => setIsSheetOpen(false)}>
-                        <Briefcase className="h-5 w-5" />
+                        <RgLogo className="h-5 w-5" />
                         <span className="font-headline">{resumeData.name}</span>
                     </Link>
                     <Button variant="ghost" size="icon" onClick={() => setIsSheetOpen(false)} aria-label="Close menu">
