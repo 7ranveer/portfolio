@@ -18,7 +18,7 @@
 /out/
 
 # production
-/build
+/buildgit config --global credential.helper
 
 # misc
 .DS_Store
