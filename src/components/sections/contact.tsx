@@ -54,8 +54,8 @@ export function ContactSection({ id }: ContactSectionProps) {
       form.reset();
     } catch (error) {
       toast({
-        title: "Error",
-        description: (error instanceof Error ? error.message : "Something went wrong. Please try again."),
+        title: "Error submitting form",
+        description: (error instanceof Error ? error.message : "Something went wrong. Please try again. (Client-side Simulated)"),
         variant: "destructive",
       });
     }
@@ -117,7 +117,7 @@ export function ContactSection({ id }: ContactSectionProps) {
                   )}
                 />
                 <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={form.formState.isSubmitting}>
-                  {form.formStext-accent-foregroundtate.isSubmitting ? "Sending..." : <>Send Message <Send className="ml-2 h-4 w-4" /></>}
+                  {form.formState.isSubmitting ? "Sending..." : <>Send Message <Send className="ml-2 h-4 w-4" /></>}
                 </Button>
               </form>
             </Form>

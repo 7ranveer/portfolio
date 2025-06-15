@@ -1,9 +1,18 @@
+
+"use client";
+
 import { resumeData, socialIcons } from '@/lib/resume-data';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { useState, useEffect } from 'react';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-card border-t py-8 text-center text-muted-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +40,7 @@ export function Footer() {
           )}
         </div>
         <p className="text-sm">
-          &copy; {currentYear} {resumeData.name}. All rights reserved.
+          &copy; {currentYear !== null ? currentYear : new Date().getFullYear()} {resumeData.name}. All rights reserved.
         </p>
          {resumeData.contact.website && (
           <p className="text-sm mt-1">
