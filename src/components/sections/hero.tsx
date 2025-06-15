@@ -39,6 +39,7 @@ export function HeroSection({ id }: HeroSectionProps) {
             </Link>
           </Button>
           <Button variant="outline" size="lg" asChild className="border-primary text-primary hover:bg-primary/10 shadow-md transition-transform hover:scale-105">
+            {/* Ensure 'resume.pdf' is placed in the 'public' folder at the project root */}
             <Link href="/resume.pdf" target="_blank" download>
               <Download className="mr-2 h-5 w-5" />
               Download Resume
