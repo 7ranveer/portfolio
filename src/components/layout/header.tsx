@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resume-data';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const navItems = [
   { href: '#home', label: 'Home' },
@@ -38,15 +39,19 @@ export function Header() {
           <span className="font-headline">{resumeData.name}</span>
         </Link>
 
-        <nav className="hidden md:flex space-x-1">
+        <nav className="hidden md:flex items-center space-x-1">
           {navItems.map((item) => (
             <Button key={item.label} variant="ghost" asChild className="text-foreground hover:text-accent hover:bg-accent/10">
               <Link href={item.href}>{item.label}</Link>
             </Button>
           ))}
+          <div className="ml-2">
+            <ThemeToggle />
+          </div>
         </nav>
 
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center space-x-2">
+          <ThemeToggle />
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">

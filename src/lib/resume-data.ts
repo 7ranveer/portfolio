@@ -59,14 +59,14 @@ export interface ResumeData {
 }
 
 export const resumeData: ResumeData = {
-  name: "Alex Johnson",
+  name: "Ranvirsinh Gohil",
   title: "Full Stack Developer & AI Enthusiast",
   summary: "Innovative Full Stack Developer with 5+ years of experience in building scalable web applications and exploring AI-driven solutions. Passionate about creating user-centric products and leveraging technology to solve real-world problems. Proven ability to quickly learn new technologies and collaborate effectively in agile environments.",
   contact: {
-    email: "alex.johnson@example.com",
-    phone: "555-123-4567",
-    linkedin: "https://linkedin.com/in/alexjohnsondev",
-    github: "https://github.com/alexjohnsondev",
+    email: "ranveergohil@gmail.com",
+    phone: "+91-8758384099",
+    linkedin: "https://linkedin.com/in/7ranveer",
+    github: "https://github.com/7ranveer",
     website: "https://alexjohnson.dev",
   },
   experience: [
