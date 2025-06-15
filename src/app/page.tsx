@@ -7,7 +7,6 @@ import { EducationSection } from '@/components/sections/education';
 import { SkillsSection } from '@/components/sections/skills';
 import { ProjectsSection } from '@/components/sections/projects';
 import { ContactSection } from '@/components/sections/contact';
-import { ElevatorPitchGeneratorSection } from '@/components/sections/elevator-pitch-generator';
 
 export default function HomePage() {
   return (
@@ -20,7 +19,6 @@ export default function HomePage() {
         <EducationSection id="education" />
         <SkillsSection id="skills" />
         <ProjectsSection id="projects" />
-        <ElevatorPitchGeneratorSection id="pitch-generator" />
         <ContactSection id="contact" />
       </main>
       <Footer />
