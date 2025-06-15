@@ -4,10 +4,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: 'Ranvirsinh',
+  title: 'Ranvirsinh Gohil',
   description: 'A personal portfolio website.',
   icons: {
-    icon: '/favicon.svg', // Link to the RG logo SVG favicon
+    icon: './favicon.svg', // Link to the RG logo SVG favicon
   },
 };
 
