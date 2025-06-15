@@ -75,7 +75,7 @@ export const resumeData: ResumeData = {
   name: "Ranvirsinh Gohil",
   title: "Full Stack Developer & AI Enthusiast",
   summary: "Innovative Full Stack Developer with 7+ years of experience in building scalable web applications and exploring AI-driven solutions. Passionate about creating user-centric products and leveraging technology to solve real-world problems. Proven ability to quickly learn new technologies and collaborate effectively in agile environments.",
-  profileImageUrl: "/images/profile/ranvirsinh-gohil.jpeg", // Corrected path
+  profileImageUrl: "./images/profile/ranvirsinh-gohil.jpeg", // do not correct
   contact: {
     email: "ranveergohil@gmail.com",
     phone: "+91-8758384099",
@@ -92,7 +92,7 @@ export const resumeData: ResumeData = {
       responsibilities: [
         "I lead a talented team of developers in building and delivering a scalable, modular fintech application deployed across multiple countries. Our architecture leverages Module Federation for developing android (Huawei as well) and IOS apps to enable seamless collaboration and deployment of independent features across distributed teams. The backend involves integration with third party systems of various banks and institutions to enable user to pay all types of utilities and transfers in a single app . I’m responsible for aligning technical strategy with business goals, ensuring efficient development workflows, and driving the successful rollout of localised features in a high-compliance, fast-paced industry."
       ],
-      logoUrl: "/images/logos/comviva.jpeg", // Corrected path
+      logoUrl: "./images/logos/comviva.jpeg", // do not correct
       icon: Briefcase,
     },
     {
@@ -105,7 +105,7 @@ export const resumeData: ResumeData = {
         "Designed and implemented a module that pushed out the web browser notifications based on interactions with marketing emails, social posts, or customer websites along with reports",
         "Handled integration with the Ticket Master platform to enable customers to target users based on their sports interests and history"
       ],
-      logoUrl: "/images/logos/comviva.jpeg", // Corrected path
+      logoUrl: "./images/logos/comviva.jpeg", // do not correct
       icon: Briefcase,
     },
     {
@@ -122,7 +122,7 @@ export const resumeData: ResumeData = {
         "Contributed to the migration of legacy systems to modern microservices architecture.",
         "Wrote unit and integration tests to ensure code quality."
       ],
-      logoUrl: "/images/logos/comviva.jpeg", // Corrected path
+      logoUrl: "./images/logos/comviva.jpeg", // do not correct
       icon: Briefcase,
     },
     {
@@ -138,7 +138,7 @@ export const resumeData: ResumeData = {
         "Participated in the full software development lifecycle, from design to deployment.",
         "Contributed to improving application performance and scalability.",
       ],
-      logoUrl: "/images/logos/servify.jpeg", // Corrected path
+      logoUrl: "./images/logos/servify.jpeg", // do not correct
       icon: Briefcase,
     },
     {
@@ -155,7 +155,7 @@ export const resumeData: ResumeData = {
         "Implemented the Event payment gateway with extra features",
         "Created Advertisement module and injected it in 3 different modules of the existing project"
       ],
-      logoUrl: "/images/logos/plexusmd.jpeg", // Corrected path
+      logoUrl: "./images/logos/plexusmd.jpeg", // do not correct
       icon: Briefcase,
     }
   ],
@@ -176,23 +176,32 @@ export const resumeData: ResumeData = {
       credentialId: "f8cfc19573",
       credentialUrl: "https://certificate.algoexpert.io/AlgoExpert%20Certificate%20AE-f8cfc19573",
       icon: Award, 
-      orgLogoUrl: "/images/logos/algoexpert.jpeg" // Corrected path
+      orgLogoUrl: "./images/logos/algoexpert.jpeg" // do not correct
     },
     {
-      name: "AWS Certified Solutions Architect - Associate",
-      issuingOrganization: "Amazon Web Services (AWS)",
-      issueDate: "Issued Mar 2021 - Expires Mar 2024",
-      credentialUrl: "https://www.youracclaim.com/badges/some-badge-id", 
+      name: "Problem Solving",
+      issuingOrganization: "HackerRank",
+      issueDate: "Issued Nov 2021",
+      credentialId: "9AE14054EF47",
+      credentialUrl: "https://www.hackerrank.com/certificates/9ae14054ef47", 
       icon: Award,
-      orgLogoUrl: "/images/logos/aws.png" // Corrected path
+      orgLogoUrl: "./images/logos/hackerrank.jpeg" // do not correct
     },
     {
-      name: "Certified Kubernetes Administrator (CKA)",
-      issuingOrganization: "The Linux Foundation",
-      issueDate: "Issued Jul 2020",
-      credentialId: "LF-CKA-67890",
+      name: "Advanced Node.js: Scaling Applications",
+      issuingOrganization: "LinkedIn",
+      issueDate: "Issued May 2020",
+      credentialUrl: "https://www.linkedin.com/learning/certificates/c887e5992e1e0d3a7541c179bb2c283fa35c51f5083d0c7d2ec8e4412ec16ff7?trk=backfilled_certificate",
       icon: Award,
-      orgLogoUrl: "/images/logos/linux-foundation.png" // Corrected path
+      orgLogoUrl: "./images/logos/linkedin.jpeg" // do not correct
+    },
+    {
+      name: "JavaScript Algorithms and Data Structures",
+      issuingOrganization: "FreeCodeCamp",
+      issueDate: "Issued July 2018",
+      credentialUrl: "https://www.freecodecamp.org/certification/7ranveer/javascript-algorithms-and-data-structures",
+      icon: Award,
+      orgLogoUrl: "./images/logos/freecodecamp.jpeg" // do not correct
     }
   ],
   skills: [
