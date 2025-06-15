@@ -16,7 +16,7 @@ export interface ExperienceEntry {
   period: string;
   location: string;
   responsibilities: string[];
-  logoUrl?: string;
+  logoUrl?: string; // e.g., "/images/logos/company-logo.png" - place logo in `public/images/logos/`
   icon?: LucideIcon;
 }
 
@@ -35,6 +35,8 @@ export interface CertificateEntry {
   credentialId?: string;
   credentialUrl?: string;
   icon?: LucideIcon;
+  // Optional: Add a field for the organization's logo if desired
+  // orgLogoUrl?: string; // e.g., "/images/logos/certifying-org-logo.png"
 }
 
 export interface Skill {
@@ -53,7 +55,7 @@ export interface ProjectEntry {
   description: string;
   technologies: string[];
   link?: string;
-  imageUrl?: string;
+  imageUrl?: string; // e.g., "/images/projects/project-thumbnail.jpg" - place image in `public/images/projects/`
   icon?: LucideIcon;
 }
 
@@ -61,6 +63,7 @@ export interface ResumeData {
   name: string;
   title: string;
   summary: string;
+  profileImageUrl?: string; // e.g., "/images/profile/your-photo.jpg" - place image in `public/images/profile/`
   contact: ContactInfo;
   experience: ExperienceEntry[];
   education: EducationEntry[];
@@ -73,6 +76,7 @@ export const resumeData: ResumeData = {
   name: "Ranvirsinh Gohil",
   title: "Full Stack Developer & AI Enthusiast",
   summary: "Innovative Full Stack Developer with 7+ years of experience in building scalable web applications and exploring AI-driven solutions. Passionate about creating user-centric products and leveraging technology to solve real-world problems. Proven ability to quickly learn new technologies and collaborate effectively in agile environments.",
+  profileImageUrl: "https://placehold.co/200x200.png", // Replace with your photo path, e.g., "/images/profile/ranvirsinh-gohil.jpg"
   contact: {
     email: "ranveergohil@gmail.com",
     phone: "+91-8758384099",
@@ -92,7 +96,7 @@ export const resumeData: ResumeData = {
         "Integrated AI-powered recommendation engine, improving user engagement by 15%.",
         "Collaborated with product managers and designers to define project requirements."
       ],
-      logoUrl: "https://placehold.co/100x100.png",
+      logoUrl: "https://placehold.co/100x100.png", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
       icon: Briefcase,
     },
     {
@@ -106,7 +110,7 @@ export const resumeData: ResumeData = {
         "Contributed to the migration of legacy systems to modern microservices architecture.",
         "Wrote unit and integration tests to ensure code quality."
       ],
-      logoUrl: "https://placehold.co/100x100.png",
+      logoUrl: "https://placehold.co/100x100.png", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
       icon: Briefcase,
     },
     {
@@ -119,7 +123,7 @@ export const resumeData: ResumeData = {
         "Participated in the full software development lifecycle, from design to deployment.",
         "Contributed to improving application performance and scalability.",
       ],
-      logoUrl: "https://placehold.co/100x100.png",
+      logoUrl: "https://placehold.co/100x100.png", // Replace with company logo path, e.g., "/images/logos/innovatech.png"
       icon: Briefcase,
     },
   ],
@@ -147,6 +151,7 @@ export const resumeData: ResumeData = {
       credentialId: "GCP-PCA-12345",
       credentialUrl: "https://www.credential.net/12345",
       icon: Award,
+      // orgLogoUrl: "https://placehold.co/80x80.png" // Example for cert org logo
     },
     {
       name: "AWS Certified Solutions Architect - Associate",
@@ -154,6 +159,7 @@ export const resumeData: ResumeData = {
       issueDate: "Issued Mar 2021 - Expires Mar 2024",
       credentialUrl: "https://www.youracclaim.com/badges/some-badge-id",
       icon: Award,
+      // orgLogoUrl: "https://placehold.co/80x80.png" // Example for cert org logo
     },
     {
       name: "Certified Kubernetes Administrator (CKA)",
@@ -161,6 +167,7 @@ export const resumeData: ResumeData = {
       issueDate: "Issued Jul 2020",
       credentialId: "LF-CKA-67890",
       icon: Award,
+      // orgLogoUrl: "https://placehold.co/80x80.png" // Example for cert org logo
     }
   ],
   skills: [
@@ -206,7 +213,7 @@ export const resumeData: ResumeData = {
       description: "A web application that suggests recipes based on available ingredients using a custom-trained NLP model.",
       technologies: ["Next.js", "Python", "Flask", "TensorFlow", "MongoDB"],
       link: "https://github.com/alexjohnsondev/ai-recipe-app",
-      imageUrl: "https://placehold.co/600x400.png",
+      imageUrl: "https://placehold.co/600x400.png", // Replace with project image path, e.g., "/images/projects/ai-recipe.png"
       icon: Lightbulb,
     },
     {
@@ -214,14 +221,14 @@ export const resumeData: ResumeData = {
       description: "A platform for multiple users to edit documents simultaneously, built with WebSockets and CRDTs.",
       technologies: ["React", "Node.js", "Socket.IO", "Redis"],
       link: "https://github.com/alexjohnsondev/collab-editor",
-      imageUrl: "https://placehold.co/600x400.png",
+      imageUrl: "https://placehold.co/600x400.png", // Replace with project image path, e.g., "/images/projects/collab-editor.png"
       icon: Code2,
     },
     {
       name: "Portfolio Website V1",
       description: "My first personal portfolio website built to showcase early projects and skills.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      imageUrl: "https://placehold.co/600x400.png",
+      imageUrl: "https://placehold.co/600x400.png", // Replace with project image path, e.g., "/images/projects/portfolio-v1.png"
       icon: Globe,
     }
   ],

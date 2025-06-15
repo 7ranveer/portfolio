@@ -15,8 +15,10 @@ export function HeroSection({ id }: HeroSectionProps) {
     <section id={id} className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/30 py-20 pt-32 md:pt-20">
       <Container className="text-center">
         <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-accent">
+          {/* Ensure resumeData.profileImageUrl is updated in `src/lib/resume-data.ts`
+              and the image file exists in the `public` folder, e.g., `public/images/profile/your-photo.jpg` */}
           <Image
-            src="https://placehold.co/200x200.png"
+            src={resumeData.profileImageUrl || "https://placehold.co/200x200.png"}
             alt={resumeData.name}
             fill
             style={{ objectFit: 'cover' }}
