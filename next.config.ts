@@ -1,7 +1,7 @@
 import type {NextConfig} from 'next';
 
 // IMPORTANT: Replace 'your-repository-name' with the actual name of your GitHub repository.
-const repositoryName = 'your-repository-name'; 
+const repositoryName = 'portfolio'; 
 
 const isProd = process.env.NODE_ENV === 'production';
 
