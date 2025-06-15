@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -5,7 +6,7 @@ import { Menu, X, Briefcase } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resume-data';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { ThemeToggle } from '@/components/theme-toggle';
 
 const navItems = [
@@ -60,13 +61,14 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-card p-6">
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div className="flex flex-col space-y-4">
                 <div className="flex justify-between items-center mb-4">
                     <Link href="#home" className="flex items-center gap-2 text-lg font-bold text-primary" onClick={() => setIsSheetOpen(false)}>
                         <Briefcase className="h-5 w-5" />
                         <span className="font-headline">{resumeData.name}</span>
                     </Link>
-                    <Button variant="ghost" size="icon" onClick={() => setIsSheetOpen(false)}>
+                    <Button variant="ghost" size="icon" onClick={() => setIsSheetOpen(false)} aria-label="Close menu">
                         <X className="h-6 w-6 text-primary" />
                         <span className="sr-only">Close menu</span>
                     </Button>
