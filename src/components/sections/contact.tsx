@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -17,7 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Container } from '@/components/container';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, Send } from 'lucide-react';
-import { handleContactFormSubmission } from '@/lib/actions';
+import { handleContactFormSubmission } from '@/lib/form-utils'; // Updated import
 import { useToast } from "@/hooks/use-toast";
 import { resumeData, socialIcons } from "@/lib/resume-data";
 import Link from "next/link";
@@ -48,13 +49,13 @@ export function ContactSection({ id }: ContactSectionProps) {
       await handleContactFormSubmission(values);
       toast({
         title: "Message Sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        description: "Thanks for reaching out. I'll get back to you soon. (Client-side Simulated)",
       });
       form.reset();
     } catch (error) {
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: (error instanceof Error ? error.message : "Something went wrong. Please try again."),
         variant: "destructive",
       });
     }
@@ -116,7 +117,7 @@ export function ContactSection({ id }: ContactSectionProps) {
                   )}
                 />
                 <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={form.formState.isSubmitting}>
-                  {form.formState.isSubmitting ? "Sending..." : <>Send Message <Send className="ml-2 h-4 w-4" /></>}
+                  {form.formStext-accent-foregroundtate.isSubmitting ? "Sending..." : <>Send Message <Send className="ml-2 h-4 w-4" /></>}
                 </Button>
               </form>
             </Form>
