@@ -7,7 +7,7 @@ import { ExperienceSection } from '@/components/sections/experience';
 import { EducationSection } from '@/components/sections/education';
 import { CertificatesSection } from '@/components/sections/certificates';
 import { SkillsSection } from '@/components/sections/skills';
-import { ProjectsSection } from '@/components/sections/projects';
+// import { ProjectsSection } from '@/components/sections/projects';
 import { ContactSection } from '@/components/sections/contact';
 
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
         <EducationSection id="education" />
         <CertificatesSection id="certificates" />
         <SkillsSection id="skills" />
-        <ProjectsSection id="projects" />
+        {/* <ProjectsSection id="projects" /> */}
         <ContactSection id="contact" />
       </main>
       <Footer />

@@ -75,7 +75,7 @@ export const resumeData: ResumeData = {
   name: "Ranvirsinh Gohil",
   title: "Full Stack Developer & AI Enthusiast",
   summary: "Innovative Full Stack Developer with 7+ years of experience in building scalable web applications and exploring AI-driven solutions. Passionate about creating user-centric products and leveraging technology to solve real-world problems. Proven ability to quickly learn new technologies and collaborate effectively in agile environments.",
-  profileImageUrl: "./images/profile/ranvirsinh-gohil.jpeg", // Updated path
+  profileImageUrl: "/images/profile/ranvirsinh-gohil.jpeg", // Corrected path
   contact: {
     email: "ranveergohil@gmail.com",
     phone: "+91-8758384099",
@@ -92,7 +92,7 @@ export const resumeData: ResumeData = {
       responsibilities: [
         "I lead a talented team of developers in building and delivering a scalable, modular fintech application deployed across multiple countries. Our architecture leverages Module Federation for developing android (Huawei as well) and IOS apps to enable seamless collaboration and deployment of independent features across distributed teams. The backend involves integration with third party systems of various banks and institutions to enable user to pay all types of utilities and transfers in a single app . I’m responsible for aligning technical strategy with business goals, ensuring efficient development workflows, and driving the successful rollout of localised features in a high-compliance, fast-paced industry."
       ],
-      logoUrl: "./images/logos/comviva.jpeg", // Updated path
+      logoUrl: "/images/logos/comviva.jpeg", // Corrected path
       icon: Briefcase,
     },
     {
@@ -105,7 +105,7 @@ export const resumeData: ResumeData = {
         "Designed and implemented a module that pushed out the web browser notifications based on interactions with marketing emails, social posts, or customer websites along with reports",
         "Handled integration with the Ticket Master platform to enable customers to target users based on their sports interests and history"
       ],
-      logoUrl: "./images/logos/comviva.jpeg", // Updated path
+      logoUrl: "/images/logos/comviva.jpeg", // Corrected path
       icon: Briefcase,
     },
     {
@@ -122,7 +122,7 @@ export const resumeData: ResumeData = {
         "Contributed to the migration of legacy systems to modern microservices architecture.",
         "Wrote unit and integration tests to ensure code quality."
       ],
-      logoUrl: "./images/logos/comviva.jpeg", // Updated path
+      logoUrl: "/images/logos/comviva.jpeg", // Corrected path
       icon: Briefcase,
     },
     {
@@ -138,7 +138,7 @@ export const resumeData: ResumeData = {
         "Participated in the full software development lifecycle, from design to deployment.",
         "Contributed to improving application performance and scalability.",
       ],
-      logoUrl: "./images/logos/servify.jpeg", // Updated path
+      logoUrl: "/images/logos/servify.jpeg", // Corrected path
       icon: Briefcase,
     },
     {
@@ -155,7 +155,7 @@ export const resumeData: ResumeData = {
         "Implemented the Event payment gateway with extra features",
         "Created Advertisement module and injected it in 3 different modules of the existing project"
       ],
-      logoUrl: "./images/logos/plexusmd.jpeg", // Updated path
+      logoUrl: "/images/logos/plexusmd.jpeg", // Corrected path
       icon: Briefcase,
     }
   ],
@@ -175,16 +175,16 @@ export const resumeData: ResumeData = {
       issueDate: "Issued Feb 2022",
       credentialId: "f8cfc19573",
       credentialUrl: "https://certificate.algoexpert.io/AlgoExpert%20Certificate%20AE-f8cfc19573",
-      icon: Award, // Icon for the certificate item itself
-      orgLogoUrl: "./images/logos/algoexpert.jpeg" // Path relative to public folder
+      icon: Award, 
+      orgLogoUrl: "/images/logos/algoexpert.jpeg" // Corrected path
     },
     {
       name: "AWS Certified Solutions Architect - Associate",
       issuingOrganization: "Amazon Web Services (AWS)",
       issueDate: "Issued Mar 2021 - Expires Mar 2024",
-      credentialUrl: "https://www.youracclaim.com/badges/some-badge-id", // Replace with actual link
+      credentialUrl: "https://www.youracclaim.com/badges/some-badge-id", 
       icon: Award,
-      orgLogoUrl: "./images/logos/aws.png" // Example: ensure you have `public/images/logos/aws.png`
+      orgLogoUrl: "/images/logos/aws.png" // Corrected path
     },
     {
       name: "Certified Kubernetes Administrator (CKA)",
@@ -192,7 +192,7 @@ export const resumeData: ResumeData = {
       issueDate: "Issued Jul 2020",
       credentialId: "LF-CKA-67890",
       icon: Award,
-      orgLogoUrl: "./images/logos/linux-foundation.png" // Example: ensure you have `public/images/logos/linux-foundation.png`
+      orgLogoUrl: "/images/logos/linux-foundation.png" // Corrected path
     }
   ],
   skills: [
@@ -232,28 +232,28 @@ export const resumeData: ResumeData = {
       ],
     },
   ],
-  projects: [
+  projects: [ // Paths here were already correct, but good to double-check
     {
       name: "AI Powered Recipe Generator",
       description: "A web application that suggests recipes based on available ingredients using a custom-trained NLP model.",
       technologies: ["Next.js", "Python", "Flask", "TensorFlow", "MongoDB"],
-      link: "https://github.com/alexjohnsondev/ai-recipe-app", // Replace with your repo
-      imageUrl: "/images/projects/ai-recipe.png", // Ensure this image exists in public/images/projects
+      link: "https://github.com/alexjohnsondev/ai-recipe-app",
+      imageUrl: "/images/projects/ai-recipe.png", 
       icon: Lightbulb,
     },
     {
       name: "Real-time Collaborative Editor",
       description: "A platform for multiple users to edit documents simultaneously, built with WebSockets and CRDTs.",
       technologies: ["React", "Node.js", "Socket.IO", "Redis"],
-      link: "https://github.com/alexjohnsondev/collab-editor", // Replace with your repo
-      imageUrl: "/images/projects/collab-editor.png", // Ensure this image exists in public/images/projects
+      link: "https://github.com/alexjohnsondev/collab-editor",
+      imageUrl: "/images/projects/collab-editor.png", 
       icon: Code2,
     },
     {
       name: "Portfolio Website V1",
       description: "My first personal portfolio website built to showcase early projects and skills.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      imageUrl: "/images/projects/portfolio-v1.png", // Ensure this image exists in public/images/projects
+      imageUrl: "/images/projects/portfolio-v1.png", 
       icon: Globe,
     }
   ],
