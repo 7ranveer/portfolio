@@ -1,3 +1,4 @@
+
 import { resumeData, type ExperienceEntry } from '@/lib/resume-data';
 import { Container } from '@/components/container';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -22,11 +23,11 @@ const TimelineItem = ({ item, isLast }: { item: ExperienceEntry; isLast: boolean
           <CardTitle className="font-headline text-xl text-primary mb-1 sm:mb-0">{item.role}</CardTitle>
           {item.logoUrl && (
             <div className="relative w-20 h-10 ml-0 sm:ml-4 mb-2 sm:mb-0 flex-shrink-0">
-              <Image 
-                src={item.logoUrl} 
-                alt={`${item.company} logo`} 
-                layout="fill" 
-                objectFit="contain" 
+              <Image
+                src={item.logoUrl}
+                alt={`${item.company} logo`}
+                fill
+                style={{ objectFit: 'contain' }}
                 data-ai-hint="company logo"
               />
             </div>

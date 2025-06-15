@@ -1,3 +1,4 @@
+
 import type { LucideIcon } from 'lucide-react';
 import { Briefcase, GraduationCap, Code2, Database, Cloud, Users, MessageCircle, Lightbulb, BarChart, GitFork, Linkedin, Github, Mail, Phone, Globe } from 'lucide-react';
 
@@ -80,6 +81,20 @@ export const resumeData: ResumeData = {
         "Mentored junior developers and conducted code reviews.",
         "Integrated AI-powered recommendation engine, improving user engagement by 15%.",
         "Collaborated with product managers and designers to define project requirements."
+      ],
+      logoUrl: "https://placehold.co/100x100.png",
+      icon: Briefcase,
+    },
+    {
+      role: "Software Engineer",
+      company: "Tech Solutions Inc.",
+      period: "Jul 2019 - Dec 2020",
+      location: "San Francisco, CA",
+      responsibilities: [
+        "Developed key features for the company's flagship product using React and Node.js.",
+        "Participated in agile development cycles, including sprint planning and retrospectives.",
+        "Contributed to the migration of legacy systems to modern microservices architecture.",
+        "Wrote unit and integration tests to ensure code quality."
       ],
       logoUrl: "https://placehold.co/100x100.png",
       icon: Briefcase,
@@ -185,3 +200,4 @@ export const socialIcons = {
   phone: Phone,
   website: Globe,
 };
+

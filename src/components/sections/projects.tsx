@@ -1,3 +1,4 @@
+
 import { resumeData, type ProjectEntry } from '@/lib/resume-data';
 import { Container } from '@/components/container';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -23,11 +24,11 @@ export function ProjectsSection({ id }: ProjectsSectionProps) {
             <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               {project.imageUrl && (
                 <div className="relative h-48 w-full">
-                  <Image 
-                    src={project.imageUrl} 
-                    alt={project.name} 
-                    layout="fill" 
-                    objectFit="cover" 
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.name}
+                    fill
+                    style={{ objectFit: 'cover' }}
                     className="rounded-t-lg"
                     data-ai-hint="project app"
                   />
