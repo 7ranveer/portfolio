@@ -38,9 +38,8 @@ export function HeroSection({ id }: HeroSectionProps) {
               Contact Me
             </Link>
           </Button>
-          {/* Note: Resume download functionality would require a resume file in /public */}
           <Button variant="outline" size="lg" asChild className="border-primary text-primary hover:bg-primary/10 shadow-md transition-transform hover:scale-105">
-            <Link href="/resume.pdf" target="_blank" download> {/* Placeholder link */}
+            <Link href="/resume.pdf" target="_blank" download>
               <Download className="mr-2 h-5 w-5" />
               Download Resume
             </Link>

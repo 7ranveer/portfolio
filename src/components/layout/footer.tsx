@@ -8,8 +8,10 @@ import { useState, useEffect } from 'react';
 
 export function Footer() {
   const [currentYear, setCurrentYear] = useState<number | null>(null);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     setCurrentYear(new Date().getFullYear());
   }, []);
 
@@ -40,7 +42,13 @@ export function Footer() {
           )}
         </div>
         <p className="text-sm">
-          &copy; {currentYear !== null ? currentYear : new Date().getFullYear()} {resumeData.name}. All rights reserved.
+          {isClient && currentYear ? (
+            `© ${currentYear} ${resumeData.name}. All rights reserved.`
+          ) : (
+            // Fallback content for SSR and pre-hydration client render.
+            // This ensures no dynamic year is rendered initially by the server or client before useEffect.
+            `© ${resumeData.name}. All rights reserved.`
+          )}
         </p>
          {resumeData.contact.website && (
           <p className="text-sm mt-1">
