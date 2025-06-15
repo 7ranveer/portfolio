@@ -1,6 +1,6 @@
 
 import type { LucideIcon } from 'lucide-react';
-import { Briefcase, GraduationCap, Code2, Database, Cloud, Users, MessageCircle, Lightbulb, BarChart, GitFork, Linkedin, Github, Mail, Phone, Globe } from 'lucide-react';
+import { Briefcase, GraduationCap, Code2, Database, Cloud, Users, MessageCircle, Lightbulb, BarChart, GitFork, Linkedin, Github, Mail, Phone, Globe, Award } from 'lucide-react';
 
 export interface ContactInfo {
   email: string;
@@ -25,6 +25,15 @@ export interface EducationEntry {
   institution: string;
   period:string;
   details?: string[];
+  icon?: LucideIcon;
+}
+
+export interface CertificateEntry {
+  name: string;
+  issuingOrganization: string;
+  issueDate: string; // e.g., "Issued Jun 2023"
+  credentialId?: string;
+  credentialUrl?: string;
   icon?: LucideIcon;
 }
 
@@ -55,6 +64,7 @@ export interface ResumeData {
   contact: ContactInfo;
   experience: ExperienceEntry[];
   education: EducationEntry[];
+  certificates: CertificateEntry[];
   skills: SkillCategory[];
   projects: ProjectEntry[];
 }
@@ -129,6 +139,30 @@ export const resumeData: ResumeData = {
       icon: GraduationCap,
     },
   ],
+  certificates: [
+    {
+      name: "Google Cloud Certified - Professional Cloud Architect",
+      issuingOrganization: "Google Cloud",
+      issueDate: "Issued Oct 2022",
+      credentialId: "GCP-PCA-12345",
+      credentialUrl: "https://www.credential.net/12345",
+      icon: Award,
+    },
+    {
+      name: "AWS Certified Solutions Architect - Associate",
+      issuingOrganization: "Amazon Web Services (AWS)",
+      issueDate: "Issued Mar 2021 - Expires Mar 2024",
+      credentialUrl: "https://www.youracclaim.com/badges/some-badge-id",
+      icon: Award,
+    },
+    {
+      name: "Certified Kubernetes Administrator (CKA)",
+      issuingOrganization: "The Linux Foundation",
+      issueDate: "Issued Jul 2020",
+      credentialId: "LF-CKA-67890",
+      icon: Award,
+    }
+  ],
   skills: [
     {
       categoryName: "Programming Languages",
@@ -201,3 +235,6 @@ export const socialIcons = {
   website: Globe,
 };
 
+export const sectionIcons = {
+  certificates: Award,
+};

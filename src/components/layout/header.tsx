@@ -2,7 +2,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Menu, X, Briefcase } from 'lucide-react';
+import { Menu, X, Briefcase, Award } from 'lucide-react'; // Added Award
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resume-data';
@@ -14,6 +14,7 @@ const navItems = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
   { href: '#education', label: 'Education' },
+  { href: '#certificates', label: 'Certificates' }, // Added Certificates
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
