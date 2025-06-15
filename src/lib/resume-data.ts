@@ -76,7 +76,7 @@ export const resumeData: ResumeData = {
   name: "Ranvirsinh Gohil",
   title: "Full Stack Developer & AI Enthusiast",
   summary: "Innovative Full Stack Developer with 7+ years of experience in building scalable web applications and exploring AI-driven solutions. Passionate about creating user-centric products and leveraging technology to solve real-world problems. Proven ability to quickly learn new technologies and collaborate effectively in agile environments.",
-  profileImageUrl: "https://placehold.co/200x200.png", // Replace with your photo path, e.g., "/images/profile/ranvirsinh-gohil.jpg"
+  profileImageUrl: "./images/profile/ranvirsinh-gohil.jpeg", // Replace with your photo path, e.g., "/images/profile/ranvirsinh-gohil.jpg"
   contact: {
     email: "ranveergohil@gmail.com",
     phone: "+91-8758384099",
