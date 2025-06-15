@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "deploy:gh-pages": "next build && touch ./out/.nojekyll && gh-pages -d out -t true"
+    "deploy:gh-pages": "next build && touch ./out/.nojekyll && gh-pages -d out -t"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.8.0",
