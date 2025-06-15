@@ -86,72 +86,98 @@ export const resumeData: ResumeData = {
   },
   experience: [
     {
-      role: "Senior Software Engineer",
-      company: "Tech Solutions Inc.",
-      period: "Jan 2021 - Present",
-      location: "San Francisco, CA",
+      role: "Senior Technical Lead",
+      company: "Comviva",
+      period: "Jun 2024 - Present",
+      location: "Bengaluru, Karnataka India",
       responsibilities: [
-        "Led development of a new e-commerce platform, resulting in a 30% increase in sales.",
-        "Mentored junior developers and conducted code reviews.",
-        "Integrated AI-powered recommendation engine, improving user engagement by 15%.",
-        "Collaborated with product managers and designers to define project requirements."
+        "I lead a talented team of developers in building and delivering a scalable, modular fintech application deployed across multiple countries. Our architecture leverages Module Federation for developing android (Huawei as well) and IOS apps to enable seamless collaboration and deployment of independent features across distributed teams. The backend involves integration with third party systems of various banks and institutions to enable user to pay all types of utilities and transfers in a single app . I’m responsible for aligning technical strategy with business goals, ensuring efficient development workflows, and driving the successful rollout of localised features in a high-compliance, fast-paced industry."
       ],
-      logoUrl: "https://placehold.co/100x100.png", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
+      logoUrl: "./images/logos/comviva.jpeg", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
       icon: Briefcase,
     },
     {
-      role: "Software Engineer",
-      company: "Tech Solutions Inc.",
-      period: "Jul 2019 - Dec 2020",
-      location: "San Francisco, CA",
+      role: "Technical Lead",
+      company: "Comviva",
+      period: "Jun 2022 - May 2024",
+      location: "Bengaluru, Karnataka India",
       responsibilities: [
+        "Revamped the UI module with the new design having self-sign-in and intuitive flows",
+        "Designed and implemented a module that pushed out the web browser notifications based on interactions with marketing emails, social posts, or customer websites along with reports",
+        "Handled integration with the Ticket Master platform to enable customers to target users based on their sports interests and history"
+      ],
+      logoUrl: "./images/logos/comviva.jpeg", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
+      icon: Briefcase,
+    },
+    {
+      role: "Senior Software Engineer",
+      company: "Comviva",
+      period: "Jun 2020 - May 2022",
+      location: "Bengaluru, Karnataka India",
+      responsibilities: [
+        "Integrated Facebook Ads functionality along with audience creation and detailed targeting",
+        "Implemented different social media channels such as Twitter and Facebook for users to simultaneously post and manage to all platforms with daily statistics comparisons and graphs",
+        "Developed a universal module for creating user sets based on different attributes and actions taken on different marketing channels",
         "Developed key features for the company's flagship product using React and Node.js.",
         "Participated in agile development cycles, including sprint planning and retrospectives.",
         "Contributed to the migration of legacy systems to modern microservices architecture.",
         "Wrote unit and integration tests to ensure code quality."
       ],
-      logoUrl: "https://placehold.co/100x100.png", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
+      logoUrl: "./images/logos/comviva.jpeg", // Replace with company logo path, e.g., "/images/logos/tech-solutions.png"
       icon: Briefcase,
     },
     {
-      role: "Software Developer",
-      company: "Innovatech Ltd.",
-      period: "Jun 2018 - Dec 2020",
-      location: "Austin, TX",
+      role: "Product Engineer",
+      company: "Servify",
+      period: "Mar 2019 - May 2020",
+      location: "Mumbai, Maharashtra India",
       responsibilities: [
+        " Integrated different third party logistics vendors",
+        "Created a mechanism for selecting different vendors based on certain criteria",
+        "Implemented tracking mechanism that accomodates multiple types of vendors",
         "Developed and maintained features for a SaaS application using React and Node.js.",
         "Participated in the full software development lifecycle, from design to deployment.",
         "Contributed to improving application performance and scalability.",
       ],
-      logoUrl: "https://placehold.co/100x100.png", // Replace with company logo path, e.g., "/images/logos/innovatech.png"
+      logoUrl: "./images/logos/servify.jpeg", // Replace with company logo path, e.g., "/images/logos/innovatech.png"
       icon: Briefcase,
     },
+    {
+      role: "Software Developer",
+      company: "PlexusMD",
+      period: "May 2018 - Feb 2019",
+      location: "Mumbai, Maharashtra India",
+      responsibilities: [
+        "Created back-end(Data Models and API’s)of global pricing system for on-demand video platform Medcast",
+        "Integrated Socket.io for tracking video duration of users for analytics",
+        "Added polls feature for type of post from scratch",
+        "Created Search API using Apache SOLR for MYSQL database with different filters for a new product",
+        "Developed a heuristic based career feed recommendation system and integrated it with the existing project",
+        "Implemented the Event payment gateway with extra features",
+        "Created Advertisement module and injected it in 3 different modules of the existing project"
+      ],
+      logoUrl: "./images/logos/plexusmd.jpeg", // Replace with company logo path, e.g., "/images/logos/innovatech.png"
+      icon: Briefcase,
+    }
   ],
   education: [
     {
-      degree: "M.S. in Computer Science",
-      institution: "Stanford University",
-      period: "2016 - 2018",
-      details: ["Specialization in Artificial Intelligence.", "GPA: 3.9/4.0"],
-      icon: GraduationCap,
-    },
-    {
-      degree: "B.S. in Software Engineering",
-      institution: "University of Texas at Austin",
-      period: "2012 - 2016",
-      details: ["Graduated with honors.", "Dean's List for 4 semesters."],
+      degree: "B.Tech in Information Technology",
+      institution: "Indian Institute of Information Technology",
+      period: "2014 - 2018",
+      details: ["CGPA: 8.3/10.0"],
       icon: GraduationCap,
     },
   ],
   certificates: [
     {
-      name: "Google Cloud Certified - Professional Cloud Architect",
-      issuingOrganization: "Google Cloud",
-      issueDate: "Issued Oct 2022",
-      credentialId: "GCP-PCA-12345",
-      credentialUrl: "https://www.credential.net/12345",
+      name: "AlgoExpert",
+      issuingOrganization: "AlgoExpert",
+      issueDate: "Issued Feb 2022",
+      credentialId: "f8cfc19573",
+      credentialUrl: "https://certificate.algoexpert.io/AlgoExpert%20Certificate%20AE-f8cfc19573",
       icon: Award,
-      // orgLogoUrl: "https://placehold.co/80x80.png" // Example for cert org logo
+      orgLogoUrl: "./images/logos/algoexpert.jpeg" // Example for cert org logo
     },
     {
       name: "AWS Certified Solutions Architect - Associate",
@@ -177,7 +203,7 @@ export const resumeData: ResumeData = {
         { name: "JavaScript (ES6+)", icon: Code2, level: 95 },
         { name: "TypeScript", icon: Code2, level: 90 },
         { name: "Python", icon: Code2, level: 85 },
-        { name: "Java", icon: Code2, level: 70 },
+        { name: "C++", icon: Code2, level: 70 },
       ],
     },
     {
@@ -185,7 +211,7 @@ export const resumeData: ResumeData = {
       skills: [
         { name: "React / Next.js", icon: Code2, level: 95 },
         { name: "Node.js / Express", icon: Code2, level: 90 },
-        { name: "Spring Boot", icon: Code2, level: 70 },
+        { name: "Flask", icon: Code2, level: 70 },
         { name: "TensorFlow / PyTorch", icon: Lightbulb, level: 75 },
       ],
     },
